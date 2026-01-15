@@ -1,7 +1,7 @@
 export default function loadContact() {
     const content = document.getElementById('content');
-
     const container = document.createElement('div');
+    container.classList.add('contact');
 
     const headline = document.createElement('h2');
     headline.textContent = 'Contattaci';
@@ -15,7 +15,7 @@ export default function loadContact() {
     email.textContent = 'Email: info@odinrestaurant.it';
     container.appendChild(email);
 
-    container.appendChild(document.createElement('p')).textContent = 'Indirizzo: Via Esempio 24, Città, Italia';
+    container.appendChild(document.createElement('p')).textContent = 'Indirizzo: Via Example 24, Città, Italia';
 
     content.appendChild(container);
 }
